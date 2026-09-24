@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ForceRe
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, ContextTypes, filters
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-TOKEN = open(os.path.join(BASE, "token.txt"), encoding="utf-8").read().strip()
+TOKEN = os.environ["BOT_TOKEN"]
 DB = os.path.join(BASE, "bot.db")
 
 db = sqlite3.connect(DB, check_same_thread=False)
