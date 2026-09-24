@@ -1,0 +1,7 @@
+token.txt
+bot.db
+bot.db-*
+__pycache__/
+brain.py
+latency_test.py
+test_bot.py
